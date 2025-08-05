@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Amigos Peludos - Ayuda a los Animales</title>
+    <!-- Enlace a Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fuente Inter para una apariencia moderna y legible */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Un color de fondo suave */
+            color: #334155; /* Color de texto principal */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Encabezado de la página -->
+    <header class="bg-gradient-to-r from-green-500 to-blue-500 text-white p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-extrabold mb-4 md:mb-0">
+                🐾 Fundación Amigos Peludos
+            </h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg font-medium">
+                    <li><a href="#inicio" class="hover:text-gray-200 transition duration-300">Inicio</a></li>
+                    <li><a href="#donar" class="hover:text-gray-200 transition duration-300">Donar</a></li>
+                    <li><a href="#contacto" class="hover:text-gray-200 transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mx-auto p-6 flex-grow">
+        <!-- Sección de Inicio/Acerca de nosotros -->
+        <section id="inicio" class="bg-white p-8 rounded-xl shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-green-700 mb-6 border-b-2 border-green-300 pb-2">
+                ¡Bienvenidos a la Fundación Amigos Peludos!
+            </h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Somos una organización dedicada al rescate, rehabilitación y reubicación de animales en situación de abandono y maltrato. Nuestra misión es brindarles una segunda oportunidad, llenándolos de amor, cuidado y esperanza.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Cada día, luchamos por un mundo donde ningún animal sufra. Tu apoyo es fundamental para continuar con nuestra labor y transformar vidas. ¡Juntos podemos hacer la diferencia!
+            </p>
+            <div class="mt-6 text-center">
+                <img src="https://placehold.co/600x300/60A5FA/FFFFFF?text=Animales+Felices" alt="Animales Felices" class="rounded-lg shadow-lg mx-auto max-w-full h-auto">
+            </div>
+        </section>
+
+        <!-- Sección de Donaciones -->
+        <section id="donar" class="bg-white p-8 rounded-xl shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">
+                Ayúdanos con tu Donación
+            </h2>
+            <p class="text-lg leading-relaxed mb-6">
+                Tu contribución es vital para cubrir los gastos de alimentación, atención veterinaria, medicamentos y refugio para nuestros animales. ¡Cada aporte, por pequeño que sea, marca una gran diferencia!
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Opción de Donación PayPal -->
+                <div class="bg-blue-50 p-6 rounded-lg shadow-inner border border-blue-200">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4 flex items-center">
+                        <svg class="w-8 h-8 mr-3 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/>
+                        </svg>
+                        Donación vía PayPal
+                    </h3>
+                    <p class="text-lg mb-4">
+                        Puedes enviarnos tu donación de forma segura a través de PayPal. Simplemente utiliza el siguiente correo electrónico:
+                    </p>
+                    <div class="bg-blue-100 p-4 rounded-md text-blue-900 font-mono text-xl text-center break-all">
+                        jpabloasa2009@hotmail.com
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">
+                        (Asegúrate de copiar el correo electrónico correctamente)
+                    </p>
+                    <a href="https://www.paypal.com/paypalme/tufundacion" target="_blank" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                        Donar con PayPal
+                    </a>
+                </div>
+
+                <!-- Opción de Donación Nequi -->
+                <div class="bg-green-50 p-6 rounded-lg shadow-inner border border-green-200">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4 flex items-center">
+                        <svg class="w-8 h-8 mr-3 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/>
+                        </svg>
+                        Donación vía Nequi
+                    </h3>
+                    <p class="text-lg mb-4">
+                        Si te encuentras en Colombia, puedes realizar tu donación directamente a través de Nequi utilizando el siguiente número de teléfono asociado a nuestra cuenta:
+                    </p>
+                    <div class="bg-green-100 p-4 rounded-md text-green-900 font-mono text-xl text-center break-all">
+                        3011952907
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">
+                        (Por favor, verifica el número antes de enviar)
+                    </p>
+                    <!-- Nequi no tiene un enlace directo como PayPal, se instruye al usuario -->
+                    <p class="mt-6 text-lg font-medium text-green-700">
+                        Abre tu app Nequi y envía tu aporte a este número. ¡Gracias!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="bg-white p-8 rounded-xl shadow-md">
+            <h2 class="text-3xl font-bold text-purple-700 mb-6 border-b-2 border-purple-300 pb-2">
+                Contáctanos
+            </h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Si tienes alguna pregunta, sugerencia o deseas saber más sobre cómo puedes ayudar, no dudes en contactarnos. ¡Estaremos encantados de escucharte!
+            </p>
+            <div class="flex items-center text-xl font-medium text-gray-700 mb-4">
+                <svg class="w-7 h-7 mr-3 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                Correo Electrónico:
+                <a href="mailto:el mejor mono 4@gmail.com" class="ml-2 text-purple-600 hover:underline break-all">
+                    el mejor mono 4@gmail.com
+                </a>
+            </div>
+            <p class="text-lg leading-relaxed">
+                También puedes seguirnos en nuestras redes sociales (próximamente) para estar al tanto de nuestras últimas noticias y eventos.
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-white p-6 mt-8 rounded-t-xl">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2024 Fundación Amigos Peludos. Todos los derechos reservados.</p>
+            <p class="mt-2">¡Gracias por tu apoyo y por ayudar a nuestros amigos de cuatro patas!</p>
+        </div>
+    </footer>
+</body>
+</html>
